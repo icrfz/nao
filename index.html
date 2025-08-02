@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>euteamo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background-image: url('/oi/images/ariana\ grande\ ♡.jpg'); /* Fundo */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+    .slider {
+      max-width: 600px;
+      margin: 40px auto;
+      position: relative;
+    }
+
+    .slides {
+      display: none;
+      text-align: center;
+    }
+
+    .slides img {
+      width: 100%;
+      border-radius: 10px;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      width: auto;
+      padding: 12px;
+      margin-top: -22px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background-color: rgba(189, 89, 159, 0.646);
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(51, 160, 187, 0.776);
+    }
+
+    .about, .contact {
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: center;
+      background-color: rgba(240, 105, 163, 0.715);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    a {
+      color: #ffc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>meu amor</h1>
+    <p>olá, meu amor, tudo bem?.<br>espero que sinta um pouquinho do meu amor por você. ❤</p>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="img/efe127b2-d0c1-4057-8edd-83d89236625e.jpg" alt="Foto 1">
+        <div class="caption">as vezes não acredito no quão sortudo sou eu, por ter alguém como você</div>
+      </div>
+      <div class="slides">
+        <img src="img/ariana grande ♡.jpg" alt="Foto 2">
+        <div class="caption">todas as poesias, as cartas de amor, filmes de romance, novelas, me lembram de você</div>
+      </div>
+      <div class="slides">
+        <img src="img/8c648e0b-6516-4ae9-ad61-ee2d38206e2e.jpg" alt="Foto 3">
+        <div class="caption">obrigado por ser essa pessoa tão doce, adorável, gentil e amável como você é
+          nada em você me faz te amar menos, pelo contrário, tudo em você me faz querer te amar mais, te desejar mais a cada dia
+        </div>
+      </div>
+      <div class="slides">
+        <img src="img/41886e07-08ec-45af-ab8d-e5cf9b3a0598.jpg" alt="Foto 4">
+        <div class="caption">se tu fosses um livro, então seria meu livro preferido.</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="about">
+      <h2>sobre amar você</h2>
+      <p>quando te amo, o tempo desacelera,
+as horas se tornam brisa em primavera.
+teu riso é música que o mundo espera,
+teu toque, abrigo onde a alma impera.
+
+amar-te é ver o céu dentro do olhar,
+é caminhar sem medo de errar.
+é ter no peito um sol a cintilar,
+mesmo nas noites frias do pensar.
+
+tu és jardim nas pedras do caminho,
+luz que floresce mesmo no espinho.
+amar-te é ser completo em desalinho,
+é ser dois corações num só vizinho.
+
+e se um dia o mundo esquecer de girar,
+eu ainda estarei aqui, a te amar —
+não por costume, promessa ou altar,
+mas porque és meu verbo: amar.</p>
+    </div>
+
+    
+  
+
+
+
+
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+  
+  </script>
+
+
+
+
+<section id="joguinho" style="
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(87, 37, 37);
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+">
+  <h2 style="color: #ffffff; font-size: 28px;">você me ama?</h2>
+
+  <div id="game-container" style="position: relative; width: 300px; height: 200px; margin: 40px auto;">
+    <button id="yes-btn" style="
+      padding: 12px 24px;
+      background-color: #dc538a;
+      color: rgb(255, 249, 249);
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    ">sim</button>
+
+    <button id="no-btn" style="
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      padding: 12px 24px;
+      background-color: #3273c2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    ">não</button>
+  </div>
+</section>
+
+<script>
+  const noBtn = document.getElementById("no-btn");
+  const yesBtn = document.getElementById("yes-btn");
+  const container = document.getElementById("game-container");
+
+  noBtn.addEventListener("mouseover", () => {
+    const maxX = container.offsetWidth - noBtn.offsetWidth;
+    const maxY = container.offsetHeight - noBtn.offsetHeight;
+
+    const newX = Math.random() * maxX;
+    const newY = Math.random() * maxY;
+
+    noBtn.style.left = `${newX}px`;
+    noBtn.style.top = `${newY}px`;
+  });
+
+  yesBtn.addEventListener("click", () => {
+    alert("EU TE AMO");
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
